@@ -1,0 +1,29 @@
+#!/bin/bash
+# q1_system_info.sh
+# This script displays system information
+
+echo "_ _ _ _ _  SYSTEM INFORMATION _ _ _ _ _"
+
+#Display current user
+echo "Logged in User: $(whoami)"
+
+# Display  hostname
+echo "Hostname: $(hostname)"
+
+#Display current date and time 
+echo "Date & Time: $(date)"
+
+# Display uptime
+echo "System Uptime:"
+uptime
+
+# Display memory usage
+echo "Memory Usage:"
+free -h
+
+# Display disk usage
+echo "Disk Usage:"
+df -h
+
+echo "-------------------------------"
+
